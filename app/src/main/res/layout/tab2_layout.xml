@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.lukas.tabbedapp.MainActivity">
+
+    <TableLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:stretchColumns="*"
+        >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0">
+
+            <Button
+                android:id="@+id/btn_blue"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#0000FF"
+                android:elevation="0dp"
+                android:text="blue"
+                android:textAlignment="center"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"/>
+
+            <Button
+                android:id="@+id/btn_green"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00FF00"
+                android:elevation="0dp"
+                android:text="green"
+                android:textAlignment="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintRight_toLeftOf="@+id/btn_blue"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn_red"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:background="#FF0000"
+                android:elevation="0dp"
+                android:text="red"
+                android:textAlignment="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0">
+
+            <Button
+                android:id="@+id/btn_cyan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00FFFF"
+                android:elevation="0dp"
+                android:text="cyan"
+                android:textAlignment="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/btn_blue"
+                tools:layout_editor_absoluteX="268dp" />
+
+            <Button
+                android:id="@+id/btn_pink"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FF007F"
+                android:elevation="0dp"
+                android:text="pink"
+                android:textAlignment="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/btn_purple"
+                tools:layout_editor_absoluteX="188dp" />
+
+            <Button
+                android:id="@+id/btn_yellow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/btn_red"
+                android:background="#FFFF00"
+                android:elevation="0dp"
+                android:text="yellow"
+                android:textAlignment="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="124dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0">
+
+            <Button
+                android:id="@+id/btn_purple"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FF00FF"
+                android:elevation="0dp"
+                android:text="purple"
+                android:textAlignment="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                tools:layout_editor_absoluteX="170dp"
+                tools:layout_editor_absoluteY="116dp" />
+
+            <Button
+                android:id="@+id/btn_grey"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#7F7F7F"
+                android:elevation="0dp"
+                android:text="grey"
+                android:textAlignment="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintLeft_toRightOf="@+id/btn_pink"
+                app:layout_constraintTop_toBottomOf="@+id/btn_cyan" />
+
+            <Button
+                android:id="@+id/btn_orange"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="#FF7F00"
+                android:elevation="0dp"
+                android:text="orange"
+                android:textAlignment="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="232dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0">
+
+            <Button
+                android:id="@+id/btn_black"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#000000"
+                android:elevation="0dp"
+                android:text="Black"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/btn_pink"
+                tools:layout_editor_absoluteX="170dp" />
+
+            <Button
+                android:id="@+id/btn_white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/btn_orange"
+                android:background="#FFFFFF"
+                android:elevation="0dp"
+                android:text="white"
+                android:textAlignment="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="340dp" />
+        </TableRow>
+    </TableLayout>
+
+</android.support.constraint.ConstraintLayout>
