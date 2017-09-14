@@ -19,9 +19,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.LinearLayout;
 import android.widget.ListView;
-import android.widget.PopupWindow;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -32,8 +30,6 @@ import java.util.ArrayList;
 import java.util.Set;
 
 import java.util.UUID;
-
-import static android.content.Context.LAYOUT_INFLATER_SERVICE;
 
 
 public class tab3_layout extends tab1_layout {
@@ -57,8 +53,6 @@ public class tab3_layout extends tab1_layout {
     Button b1,b3,b4;
     Button disconnect;
 
-    PopupWindow pw;
-    LinearLayout mainlayout;
     public View rootView;
 
 
@@ -168,7 +162,7 @@ public class tab3_layout extends tab1_layout {
 
                         bluetoothOutputStream = null;
                     }
-                    
+
                 }
                 message("Disconnected");
             }
