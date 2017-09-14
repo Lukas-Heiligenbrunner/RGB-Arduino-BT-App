@@ -43,6 +43,8 @@ public class tab3_layout extends tab1_layout {
     OutputStream bluetoothOutputStream;
     InputStream bluetoothInputStream;
 
+    boolean btsocket_manual_close = false;
+
     final UUID MY_UUID = UUID.fromString("00001101-0000-1000-8000-00805F9B34FB");
     boolean isBluetoothConnected = false;
 
@@ -144,16 +146,19 @@ public class tab3_layout extends tab1_layout {
             public void onClick(View view) {
 
                 if(BA.isEnabled()) {
+
+                    if(!btsocket_manual_close)
                     try {
+                        bluetoothOutputStream.close();
+                        bluetoothInputStream.close();
                         bluetoothSocket.close();
+                        btsocket_manual_close = true;
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
-
                     if (bluetoothSocket != null) {
                         bluetoothSocket = null;
                     }
-
                     if (bluetoothInputStream != null) {
                         bluetoothInputStream = null;
                     }
@@ -202,13 +207,14 @@ public class tab3_layout extends tab1_layout {
         @Override
         protected Void doInBackground(Void... devices) {
             try {
-                if (bluetoothSocket == null || bluetoothSocket.isConnected()) {
+                if (bluetoothSocket == null || !bluetoothSocket.isConnected()) {
                     bluetoothDevice = BA.getRemoteDevice(address);
                     bluetoothSocket = bluetoothDevice.createInsecureRfcommSocketToServiceRecord(MY_UUID);
                     bluetoothOutputStream = bluetoothSocket.getOutputStream();
                     bluetoothInputStream = bluetoothSocket.getInputStream();
                     BA.cancelDiscovery();
                     bluetoothSocket.connect();
+                    btsocket_manual_close = false;
                 }
             } catch (IOException e) {
                 ConnectSuccess = false;
