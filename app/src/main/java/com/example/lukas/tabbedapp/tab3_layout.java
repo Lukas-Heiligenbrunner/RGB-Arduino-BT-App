@@ -148,25 +148,27 @@ public class tab3_layout extends tab1_layout {
         disconnect.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                try {
-                    bluetoothSocket.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
 
-                if(bluetoothSocket != null)
-                {
-                    bluetoothSocket = null;
-                }
+                if(BA.isEnabled()) {
+                    try {
+                        bluetoothSocket.close();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
 
-                if(bluetoothInputStream != null)
-                {
-                    bluetoothInputStream =null;
-                }
+                    if (bluetoothSocket != null) {
+                        bluetoothSocket = null;
+                    }
 
-                if(bluetoothOutputStream != null)
-                {
-                    bluetoothOutputStream =null;
+                    if (bluetoothInputStream != null) {
+                        bluetoothInputStream = null;
+                    }
+
+                    if (bluetoothOutputStream != null) {
+
+                        bluetoothOutputStream = null;
+                    }
+                    
                 }
                 message("Disconnected");
             }
