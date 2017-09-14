@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        setTitle("RGB Farbmischer");
+        setTitle("RGB color changer");
 
         initialize_screen_orientation();
 
@@ -115,9 +115,9 @@ public class MainActivity extends AppCompatActivity {
         public CharSequence getPageTitle(int position) {
             switch (position) {
                 case 1:
-                    return "Farbmischer";
+                    return "mix colors";
                 case 2:
-                    return "Farben Anzeigen";
+                    return "predefined colors";
                 case 0:
                     return "Bluetooth";
             }
