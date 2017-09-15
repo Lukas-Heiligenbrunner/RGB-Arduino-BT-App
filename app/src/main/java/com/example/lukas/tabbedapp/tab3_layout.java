@@ -5,15 +5,12 @@ import android.app.ProgressDialog;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothSocket;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 
-import android.view.Gravity;
 import android.view.LayoutInflater;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -63,7 +60,7 @@ public class tab3_layout extends tab1_layout {
                              Bundle savedInstanceState) {
         rootView = inflater.inflate(R.layout.tab3_layout, container, false);
 
-        BA = BluetoothAdapter.getDefaultAdapter(); //if BA is null now there is no bluetoothadapter available
+        BA = BluetoothAdapter.getDefaultAdapter(); //if BA is null, there is no bluetoothadapter available
         lv = (ListView)rootView.findViewById(R.id.listView);
         btConnection = new BluetoothConnection();
 
@@ -147,14 +144,15 @@ public class tab3_layout extends tab1_layout {
 
                 if(BA.isEnabled()) {
 
-                    if(!btsocket_manual_close)
-                    try {
-                        bluetoothOutputStream.close();
-                        bluetoothInputStream.close();
-                        bluetoothSocket.close();
-                        btsocket_manual_close = true;
-                    } catch (IOException e) {
-                        e.printStackTrace();
+                    if(!btsocket_manual_close) {
+                        try {
+                            bluetoothOutputStream.close();
+                            bluetoothInputStream.close();
+                            bluetoothSocket.close();
+                            btsocket_manual_close = true;
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
                     }
                     if (bluetoothSocket != null) {
                         bluetoothSocket = null;
