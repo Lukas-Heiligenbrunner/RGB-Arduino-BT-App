@@ -17,4 +17,4 @@ The color gets transmitted in the following sequence: "R/G/B" --> for example "2
 
 ### v1.0-stable
 
-<a href"https://drive.google.com/open?id=0BzQ_9ZVXqMvpc0ZLTnlZU2NVakk">Download</a>
+<a href="https://drive.google.com/open?id=0BzQ_9ZVXqMvpc0ZLTnlZU2NVakk">Download</a>
