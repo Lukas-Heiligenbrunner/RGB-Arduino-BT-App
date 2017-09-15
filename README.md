@@ -16,7 +16,7 @@ The color gets transmitted in the following sequence: "R/G/B" --> for example "2
 #### Changelog
 * some bug fixes
 
-<a href="https://drive.google.com/open?id=0BzQ_9ZVXqMvpc0ZLTnlZU2NVakk">Downloa$
+<a href="https://drive.google.com/open?id=0BzQ_9ZVXqMvpc0ZLTnlZU2NVakk">Download</a>
 
 ### v1.0-beta
  
