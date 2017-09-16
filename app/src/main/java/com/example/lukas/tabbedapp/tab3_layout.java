@@ -114,10 +114,6 @@ public class tab3_layout extends tab1_layout {
                 list = new ArrayList();
                 ArrayAdapter adapter;
 
-
-
-                list.add("paired devices");
-
                 if (pairedDevices.size()>0) {
                     for(BluetoothDevice bt : pairedDevices) { //pipe the bluetoothdevices in the listview
                         list.add(bt.getName() + "\n" + bt.getAddress());
@@ -127,10 +123,7 @@ public class tab3_layout extends tab1_layout {
                     Toast.makeText(getContext(), "No Paired Bluetooth Devices Found.", Toast.LENGTH_LONG).show();
                 }
                 Toast.makeText(getContext(), "Showing Paired Devices", Toast.LENGTH_SHORT).show();displayListOfFoundDevices();
-
-                list.add("search for devices");
-
-                displayListOfFoundDevices();
+                
 
                 adapter = new ArrayAdapter(getContext(), android.R.layout.simple_list_item_1, list);
 
@@ -186,35 +179,6 @@ public class tab3_layout extends tab1_layout {
         });
 
         return rootView;
-    }
-
-    private void displayListOfFoundDevices()
-    {
-
-        // start looking for bluetooth devices
-        BA.startDiscovery();
-
-        // Discover new devices
-        // Create a BroadcastReceiver for ACTION_FOUND
-        mReceiver = new BroadcastReceiver()
-        {
-            @Override
-            public void onReceive(Context context, Intent intent)
-            {
-                String action = intent.getAction();
-                // When discovery finds a device
-                if (BluetoothDevice.ACTION_FOUND.equals(action))
-                {
-                    BluetoothDevice device = intent.getParcelableExtra(BluetoothDevice.EXTRA_DEVICE);
-                    // Add the name and address to an array adapter to show in a ListView
-                    list.add(device.getName() + "\n" + device.getAddress());
-                }
-            }
-        };
-        // Register the BroadcastReceiver
-        IntentFilter filter = new IntentFilter(BluetoothDevice.ACTION_FOUND);
-        getContext().registerReceiver(mReceiver, filter);
-
     }
 
     //function for pop-up message
