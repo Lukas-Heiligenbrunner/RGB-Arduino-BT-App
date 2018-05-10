@@ -90,7 +90,7 @@ public class tab1_layout extends Fragment{
                 hexcolor.setText("HEX: "+Integer.toHexString(red).toUpperCase()+"/"+Integer.toHexString(green).toUpperCase()+"/"+Integer.toHexString(blue).toUpperCase());
                 deccolor.setText("DEC: "+String.valueOf(red)+"/"+String.valueOf(green)+"/"+String.valueOf(blue));
                 getBtData(); //load current bluetooth connection data
-                bluetoothWrite(String.valueOf(red)+"/"+String.valueOf(green)+"/"+String.valueOf(blue)); //write values to bluetooth module
+                bluetoothWrite(Integer.toHexString(red)+"/"+Integer.toHexString(green)+"/"+Integer.toHexString(blue)+",");
 
                 if((red+green+blue)<=200)
                 {
@@ -127,7 +127,7 @@ public class tab1_layout extends Fragment{
                 hexcolor.setText("HEX: "+Integer.toHexString(red).toUpperCase()+"/"+Integer.toHexString(green).toUpperCase()+"/"+Integer.toHexString(blue).toUpperCase());
                 deccolor.setText("DEC: "+String.valueOf(red)+"/"+String.valueOf(green)+"/"+String.valueOf(blue));
                 getBtData();
-                bluetoothWrite(String.valueOf(red)+"/"+String.valueOf(green)+"/"+String.valueOf(blue));
+                bluetoothWrite(Integer.toHexString(red)+"/"+Integer.toHexString(green)+"/"+Integer.toHexString(blue)+",");
 
                 if((red+green+blue)<=200)
                 {
@@ -164,7 +164,7 @@ public class tab1_layout extends Fragment{
                 hexcolor.setText("HEX: "+Integer.toHexString(red).toUpperCase()+"/"+Integer.toHexString(green).toUpperCase()+"/"+Integer.toHexString(blue).toUpperCase());
                 deccolor.setText("DEC: "+String.valueOf(red)+"/"+String.valueOf(green)+"/"+String.valueOf(blue));
                 getBtData();
-                bluetoothWrite(String.valueOf(red)+"/"+String.valueOf(green)+"/"+String.valueOf(blue));
+                bluetoothWrite(Integer.toHexString(red)+"/"+Integer.toHexString(green)+"/"+Integer.toHexString(blue)+",");
 
                 if((red+green+blue)<=200)
                 {

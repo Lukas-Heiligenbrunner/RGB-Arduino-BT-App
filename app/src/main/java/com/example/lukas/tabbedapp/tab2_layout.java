@@ -77,67 +77,67 @@ public class tab2_layout extends Fragment {
             switch (v.getId()) {
                 case R.id.btn_red:
 
-                    bluetoothWrite("255/0/0");
+                    bluetoothWrite("ff/0/0,");
                     message("set color to red");
 
                     break;
                 case R.id.btn_blue:
 
-                    bluetoothWrite("0/0/255");
+                    bluetoothWrite("0/0/ff,");
                     message("set color to blue");
 
                     break;
                 case R.id.btn_green:
 
-                    bluetoothWrite("0/255/0");
-                    message("set color to greem");
+                    bluetoothWrite("0/ff/0,");
+                    message("set color to green");
 
                     break;
                 case R.id.btn_yellow:
 
-                    bluetoothWrite("255/255/0");
+                    bluetoothWrite("ff/ff/0,");
                     message("set color to yellow");
 
                     break;
                 case R.id.btn_purple:
 
-                    bluetoothWrite("255/0/255");
+                    bluetoothWrite("ff/0/ff,");
                     message("set color to purple");
 
                     break;
                 case R.id.btn_cyan:
 
-                    bluetoothWrite("0/255/255");
+                    bluetoothWrite("0/ff/ff,");
                     message("set color to cyan");
 
                     break;
                 case R.id.btn_orange:
 
-                    bluetoothWrite("255/127/0");
+                    bluetoothWrite("ff/7f/0,");
                     message("set color to orange");
 
                     break;
                 case R.id.btn_pink:
 
-                    bluetoothWrite("255/0/127");
+                    bluetoothWrite("ff/0/7f,");
                     message("set color to pink");
 
                     break;
                 case R.id.btn_grey:
 
-                    bluetoothWrite("127/127/127");
+                    bluetoothWrite("7f/7f/7f,");
                     message("set color to grey");
 
                     break;
                 case R.id.btn_white:
 
-                    bluetoothWrite("255/255/255");
+                    bluetoothWrite("ff/ff/ff,");
                     message("set color to white");
 
                     break;
                 case R.id.btn_black:
 
-                    bluetoothWrite("0/0/0");
+                    bluetoothWrite("0/0/0,");
                     message("turned off");
 
                     break;

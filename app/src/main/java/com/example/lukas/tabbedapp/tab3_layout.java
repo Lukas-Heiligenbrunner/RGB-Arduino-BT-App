@@ -122,7 +122,7 @@ public class tab3_layout extends tab1_layout {
                 else {
                     Toast.makeText(getContext(), "No Paired Bluetooth Devices Found.", Toast.LENGTH_LONG).show();
                 }
-                Toast.makeText(getContext(), "Showing Paired Devices", Toast.LENGTH_SHORT).show();displayListOfFoundDevices();
+                Toast.makeText(getContext(), "Showing Paired Devices", Toast.LENGTH_SHORT).show();//displayListOfFoundDevices
                 
 
                 adapter = new ArrayAdapter(getContext(), android.R.layout.simple_list_item_1, list);
