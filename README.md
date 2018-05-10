@@ -3,7 +3,7 @@ A Android app to control a bluetooth module (with Arduino for example).
 
 The color gets transmitted in the following sequence: "R/G/B," --> for example "ff/0/ff," ≙ purple
 
-Here you can get the Arduino sketch, a Eagle Print and a openscad case: <a href="https://github.com/Lukas-Heiligenbrunner/RGB-Arduino-BT-Eagle-PCB-Case">HERE</>
+Here you can get the Arduino sketch, a Eagle Print and a openscad case: <a href="https://github.com/Lukas-Heiligenbrunner/RGB-Arduino-BT-Eagle-PCB-Case">HERE</a>
 
 ## Features
 * turn bluetooth on and off
