@@ -1,7 +1,7 @@
 # RGB colorchanger via Bluetooth
 A Android app to control a bluetooth module (with Arduino for example).
 
-The color gets transmitted in the following sequence: "R/G/B" --> for example "255/0/255" ≙ purple
+The color gets transmitted in the following sequence: "R/G/B," --> for example "ff/0/ff," ≙ purple
 
 ## Features
 * turn bluetooth on and off
@@ -16,10 +16,10 @@ The color gets transmitted in the following sequence: "R/G/B" --> for example "2
 #### Changelog
 * some bug fixes
 
-<a href="https://drive.google.com/open?id=0BzQ_9ZVXqMvpc0ZLTnlZU2NVakk">Download</a>
+<a href="https://github.com/Lukas-Heiligenbrunner/RGB-Arduino-BT-App/releases/download/v1.0-stable/RGB-Arduino-BT-v1_0-stable.apk">Download</a>
 
 ### v1.0-beta
  
-<a href="https://drive.google.com/open?id=0BzQ_9ZVXqMvpUENoQnd5ZkpLRjA">Download</a>
+<a href="https://github.com/Lukas-Heiligenbrunner/RGB-Arduino-BT-App/releases/download/v1.0-beta/RGB-Arduino-BT-v1_0-beta.apk">Download</a>
 
 
