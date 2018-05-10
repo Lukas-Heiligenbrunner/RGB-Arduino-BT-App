@@ -11,6 +11,13 @@ The color gets transmitted in the following sequence: "R/G/B," --> for example "
 
 ## Download links
 
+### v1.1
+
+#### Changelog
+* The transmission String has changed form decimal to hex
+
+<a href="https://github.com/Lukas-Heiligenbrunner/RGB-Arduino-BT-App/releases/download/v1.1/RGB-Arduino-BT-v1_1.apk">Download</a>
+
 ### v1.0-stable
 
 #### Changelog
