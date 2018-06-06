@@ -10,8 +10,12 @@ Here you can get the Arduino sketch, a Eagle Print and a openscad case: <a href=
 * connect/disconnect button
 * one side with seekbars to mix each color you want
 * one side to select fix colors
+<p>
+<img src="https://image.ibb.co/dyvdHo/Screenshot_2018_06_06_17_40_18_712_com_example_lukas_tabbedapp.png" width="275"  />
+<img src="https://image.ibb.co/iDVpOT/Screenshot_2018_06_06_17_40_46_946_com_example_lukas_tabbedapp.png" width="275"  />
+<img src="https://image.ibb.co/eOYXco/Screenshot_2018_06_06_17_40_49_621_com_example_lukas_tabbedapp.png"  width="275"  />
+</p>
 
-![](https://ibb.co/bAt9OT)
 
 ## Download links
 
