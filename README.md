@@ -11,6 +11,8 @@ Here you can get the Arduino sketch, a Eagle Print and a openscad case: <a href=
 * one side with seekbars to mix each color you want
 * one side to select fix colors
 
+![](https://ibb.co/bAt9OT)
+
 ## Download links
 
 ### v1.1
